@@ -11,11 +11,12 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-              Image("swift")
+            Image(systemName: "swift")
                 .resizable()
                 .scaledToFit()
-                .foregroundColor(.orange)
-            Text("You Are Awesome!")
+                .foregroundStyle(.orange)
+            Text("Hello World!")
+            Text("I am an app developer!")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundStyle(.orange)
