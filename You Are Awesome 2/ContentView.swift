@@ -12,19 +12,35 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Spacer()
+            
             Image(systemName: "swift")
                 .resizable()
                 .scaledToFit()
                 .foregroundStyle(.orange)
+                .frame(width: 300, height: 300)
+            
             Text(message)
                 .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundStyle(.orange)
-            Button("Click Me!") {
-                message = "Awsome!"
+                .fontWeight(.ultraLight)
+                .foregroundStyle(.black)
+                    
+            Spacer()
+            
+            HStack {
+                Button("Awesome") {
+                    message = "Awsome!"
+                }
+                
+                Button("Great!") {
+                    message = "Great!!"
+                }
             }
-
-        }
+            .buttonStyle(.borderedProminent)
+            .font(.title2)
+            .tint(.orange)
+            
+  }
         .padding()
         
     }
