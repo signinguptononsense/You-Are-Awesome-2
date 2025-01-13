@@ -28,4 +28,5 @@ struct ContentView: View {
     // New stuff here
 }
 #Preview {
+    ContentView()
 }
