@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-              Image("swift")
+            Image(systemName:"swift")
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(.orange)
@@ -27,4 +27,5 @@ struct ContentView: View {
     // New stuff here
 }
 #Preview {
+    ContentView()
 }
